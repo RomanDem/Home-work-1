@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    font-size: 100%;
+    line-height: auto;
+
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+
+
+body {
+    font-family: 'PT Sans', sans-serif, Arial;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*   чому має бути display: inline-block; вкладений в .main-menu-item, і  не працюєв  .main-menu-item a */
+nav .main-menu-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-menu-item:first-child {
+    margin-left: 160px;
+}
+
+.main-menu-item:last-child {
+    margin-right: 160px;
+}
+
+.main-menu-item:not(last-child),
+.main-menu-item:not(first-child) {
+    margin-right: 100px;
+}
+
+ul.main-menu {
+    margin: 0;
+    padding: 70px 0px 100px 0px;
+}
+
+
+
+
+
+.main-menu-item a {
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+    color: #626262;
+}
+
+.main-menu-item a:hover,
+.main-menu-item a:focus {
+    color: red;
+}
+
+
+
+section article {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+div.content {
+    display: inline-block;
+    width: 420px;
+    margin: 0 56px 130px 0;
+
+
+}
+
+div.content:nth-child(2n) {
+    margin: 0 0 130px 0;
+}
+
+
+div.content:nth-last-child(-n+3) {
+    margin: 0 56 60px 0;
+}
+
+
+
+div img+p {
+    color: #b4ad9e;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    color: rgb(98, 98, 98);
+    font-weight: normal
+}
+
+
+
+
+
+}
+
+.download-button {
+
+    margin: 0;
+    padding: 24px 34px;
+}
+
+button {
+    font-family: 'PT Sans', sans-serif, Arial;
+    color: #626262;
+    font-size: 20px;
+    line-height: 24px;
+    background: 0;
+    border: solid;
+    border-width: 1px;
+    text-align: center;
+    margin: 0 0 0 360px;
+}
